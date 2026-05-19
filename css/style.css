@@ -12,8 +12,22 @@
 
 
  
-html {
-  font-family: 'Open Sans', sans-serif;
+@font-face {
+    font-family: 'rodin';
+    src: url('/css/RodinNTLGPro-DB-AlphaNum.woff2') format('woff2'),
+         url('/css/RodinNTLGPro-DB-AlphaNum.woff') format('woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'rodin';
+    src: url('/css/RodinNTLGPro-B-AlphaNum.woff2') format('woff2'),
+         url('/css/RodinNTLGPro-B-AlphaNum.woff') format('woff');
+    font-weight: 700;
+}
+
+html, body {
+  font-family: 'rodin', sans-serif;
   font-size: 17px;
   overflow: scroll;
 }

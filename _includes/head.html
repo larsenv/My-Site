@@ -1,31 +1,54 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>{{ page.title }}</title>
+  <title>{{ page.title | default: "Larsenv - Larsen Vallecillo" }}</title>
 
-  <!-- Materialize CSS  -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Materialize CSS and JS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.3.1/dist/css/materialize.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.3.1/dist/js/materialize.min.js"></script>
   <link href="/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 
-  <!-- Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-
-  <!-- Font Awesome --> 
-  <script src="https://kit.fontawesome.com/8c73d9a1fd.js"></script>
-  
   <meta name="google-site-verification" content="bQBMjw2o425qwS0TRdW_tx7Evx0Ql_yRWv4ACPa27k0" />
   <meta name="msvalidate.01" content="229FBDF9FE2F1A36CEDFAB9F171C6A4E" />
 
   <!-- General Meta tags for SEO -->
-	<meta name="language" content="English">
-	<meta name="title" content="{{ title }}"/>
-	<meta name="author" content="Larsen Vallecillo"/>
-	<meta name="copyright" content="&copy; Larsen Vallecillo"/>
-	<meta name="robots" content="index, follow"/>
-	<meta name="subject" content="Larsen Vallecillo">
-	<meta name="keywords" content="Larsenv, Larsen Vallecillo">
-	<meta name="description" content="Larsen Vallecillo's site.">
-	<meta name="classification" content="Larsen Vallecillo's site.">
+  <meta name="description" content="Larsen Vallecillo (Larsenv) - Personal website and contact information.">
+  <meta name="keywords" content="Larsenv, Larsen Vallecillo, developer, software">
+  <meta name="author" content="Larsen Vallecillo">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://larsenv.xyz/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://larsenv.xyz/">
+  <meta property="og:title" content="Larsenv - Larsen Vallecillo">
+  <meta property="og:description" content="Larsen Vallecillo (Larsenv) - Personal website and contact information.">
+  <meta property="og:image" content="https://larsenv.xyz/images/avatar.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://larsenv.xyz/">
+  <meta property="twitter:title" content="Larsenv - Larsen Vallecillo">
+  <meta property="twitter:description" content="Larsen Vallecillo (Larsenv) - Personal website and contact information.">
+  <meta property="twitter:image" content="https://larsenv.xyz/images/avatar.png">
+
+  <!-- JSON-LD for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Larsen Vallecillo",
+    "alternateName": "Larsenv",
+    "url": "https://larsenv.xyz/",
+    "image": "https://larsenv.xyz/images/avatar.png",
+    "sameAs": [
+      "https://github.com/larsenv",
+      "https://twitter.com/larsenv"
+    ],
+    "jobTitle": "Developer",
+    "email": "larsenv293@gmail.com"
+  }
+  </script>
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">

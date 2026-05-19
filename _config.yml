@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 
 # Build settings
-title: Larsenv
+title: Larsenv - Larsen Vallecillo
 defaults:
   -
     scope:
@@ -23,7 +23,7 @@ defaults:
     values:
       layout: "default"
       # Sites have their own title to show.
-      title: "Larsenv"
+      title: "Larsenv - Larsen Vallecillo"
 markdown: kramdown
 plugins:
   - jekyll-sitemap
