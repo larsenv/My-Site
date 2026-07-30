@@ -28,7 +28,7 @@
   --accent: #3fb8e0;
   --accent-soft: rgba(63, 184, 224, 0.12);
   --border: #35353c;
-  --btn-text: #12181a;
+  --btn-text: #ffffff;
 }
 
 @media (prefers-color-scheme: light) {
