@@ -120,6 +120,12 @@ p {
   text-align: center;
 }
 
+.site-header .avatar {
+  border-radius: 50%;
+  border: 2px solid var(--border);
+  margin-bottom: 1.2rem;
+}
+
 .site-header h1 {
   font-size: 2.6rem;
   margin-bottom: 0.4rem;
@@ -149,11 +155,20 @@ p {
   line-height: 1.5rem;
 }
 
+.member-login-wrap {
+  margin-top: 1.6rem;
+  margin-bottom: 1rem;
+}
+
 .member-login-btn {
-  margin-top: 1.4rem;
+  display: inline-block;
+  padding: 0 2rem;
+  height: 38px;
+  line-height: 38px;
   background-color: var(--accent) !important;
   color: var(--btn-text) !important;
   border-radius: 4px;
+  text-transform: none;
 }
 
 .section-heading {
@@ -177,9 +192,17 @@ p {
   padding: 2.5rem 0 4rem;
 }
 
+.projects-section .row {
+  margin-bottom: 0;
+}
+
+.projects-section .col {
+  padding: 0.8rem;
+}
+
 .project-card {
   height: 100%;
-  padding: 1.4rem;
+  padding: 1.6rem;
   display: flex;
   flex-direction: column;
 }
@@ -187,17 +210,18 @@ p {
 .project-card .project-head {
   display: flex;
   align-items: center;
-  margin-bottom: 0.8rem;
+  margin-bottom: 1rem;
 }
 
 .project-card .project-head img {
-  width: 32px;
-  height: 32px;
-  margin-right: 0.7rem;
+  width: 28px;
+  height: 28px;
+  margin-right: 0.8rem;
   border-radius: 6px;
   background: var(--accent-soft);
   object-fit: contain;
-  padding: 4px;
+  padding: 6px;
+  flex-shrink: 0;
 }
 
 .project-card .project-head h3 {
