@@ -218,19 +218,20 @@ p {
 
 .project-card .project-head {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 1rem;
+  margin-bottom: 1.1rem;
 }
 
 .project-card .project-head img {
-  width: 48px;
-  height: 48px;
-  margin-right: 0.9rem;
-  border-radius: 8px;
+  width: 72px;
+  height: 72px;
+  margin-bottom: 0.9rem;
+  border-radius: 12px;
   background: var(--accent-soft);
   box-sizing: border-box;
-  padding: 8px;
+  padding: 10px;
   object-fit: contain;
   object-position: center;
   display: block;
@@ -238,7 +239,7 @@ p {
 }
 
 .project-card .project-head h3 {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   margin: 0;
   color: var(--heading);
 }
