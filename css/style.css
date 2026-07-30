@@ -231,8 +231,7 @@ p {
   border-radius: 12px;
   background: var(--accent-soft);
   box-sizing: border-box;
-  padding: 10px;
-  object-fit: contain;
+  object-fit: cover;
   object-position: center;
   display: block;
   flex-shrink: 0;
