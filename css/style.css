@@ -213,6 +213,7 @@ p {
   padding: 1.8rem;
   display: flex;
   flex-direction: column;
+  gap: 0.6rem;
   text-align: center;
 }
 
@@ -221,7 +222,6 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 0.6rem;
 }
 
 .project-card .project-head img {
@@ -249,14 +249,13 @@ p {
   color: var(--text-muted);
   line-height: 1.6rem;
   flex-grow: 1;
-  margin-bottom: 0;
+  margin: 0;
   text-align: center;
 }
 
 .project-card a.project-link {
   display: inline-block;
   align-self: center;
-  margin-top: 0.45rem;
   padding: 0 1.2rem;
   height: 32px;
   line-height: 32px;
