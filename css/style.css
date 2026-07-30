@@ -1,17 +1,9 @@
-.blue-text {
-  color: #fff !important;
-}
-
 /* Custom Stylesheet */
 /**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
+ * Overrides Materialize so core Materialize files can still be updated
+ * independently. Made By MaterializeCSS.com (base template)
  */
 
-
- 
 @font-face {
     font-family: 'rodin';
     src: url('/css/RodinNTLGPro-DB-AlphaNum.woff2') format('woff2'),
@@ -26,164 +18,237 @@
     font-weight: 700;
 }
 
+:root {
+  --bg: #1a1a1e;
+  --bg-alt: #232328;
+  --card-bg: #232328;
+  --text: #d8d8dc;
+  --text-muted: #9a9aa2;
+  --heading: #f2f2f4;
+  --accent: #3fb8e0;
+  --accent-soft: rgba(63, 184, 224, 0.12);
+  --border: #35353c;
+  --btn-text: #12181a;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #fafafa;
+    --bg-alt: #f0f0f2;
+    --card-bg: #ffffff;
+    --text: #333338;
+    --text-muted: #6b6b72;
+    --heading: #171719;
+    --accent: #0b7ea1;
+    --accent-soft: rgba(11, 126, 161, 0.08);
+    --border: #e2e2e6;
+    --btn-text: #ffffff;
+  }
+}
+
 html, body {
   font-family: 'rodin', sans-serif;
   font-size: 17px;
-  overflow: scroll;
+  overflow-y: auto;
 }
-
-/* Materialize stuff */
 
 html {
-  color: #c0c0c0 !important;
-  background: #333 !important;
-}
-
-.sidenav li > a > i, .sidenav li > a, .sidenav li > a li > a, .sidenav li > a > i.material-icons {
-  color: #fff;
-}
-
-.sidenav {
-  background-color: #222;
-}
-
-.page-footer {
-  margin: 0;
-  background-color: #222 !important;
-}
-
-.blue {
-  background-color: #222 !important;
-}
-
-.collection .collection-item {
-  background-color: #222;
-  border-bottom: 1px solid #e0e0e0;
-}
-
-.collection.with-header .collection-header {
-  background-color: #222;
-  border-bottom: 1px solid #e0e0e0;
-}
-
-.green {
-  color: #000;
-}
-
-.yellow {
-  color: #000;
-}
-
-
-.orange {
-  color: #000;
-}
-
-.red {
-  color: #000;
-}
-
-.actually-red {
-  color: #ea454b
-}
-
-.card {
-  background-color: #222;
+  color: var(--text) !important;
+  background: var(--bg) !important;
 }
 
 a {
-  color: #00b0f4;
-}
-
-.collection {
-  background: #222;
-}
-
-nav ul a,
-nav .brand-logo {
-/*  color: #444;*/
+  color: var(--accent);
 }
 
 p {
-  line-height: 2rem;
+  line-height: 1.9rem;
 }
 
-.button-collapse {
-  color: #26a69a;
+.blue-text {
+  color: var(--heading) !important;
 }
 
-.parallax-container {
-  min-height: 750px;
-  line-height: 0;
-  height: auto;
-}
-.parallax-container.small-parallax-container {
-  min-height: 0;
-}
-  .parallax-container .section {
-    width: 100%;
-  }
-
-@media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
+.white-text {
+  color: var(--heading) !important;
 }
 
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
+.actually-red {
+  color: #ea454b;
 }
 
-.icon-block {
-  padding: 0 15px;
+.sidenav {
+  background-color: var(--bg-alt);
 }
-.icon-block .material-icons {
-  font-size: inherit;
+
+.sidenav li > a > i,
+.sidenav li > a,
+.sidenav li > a li > a,
+.sidenav li > a > i.material-icons {
+  color: var(--text);
 }
 
 .page-footer {
   margin: 0;
+  background-color: var(--bg-alt) !important;
 }
 
-.full-height {
-  min-height: 100%;
-  min-height: 100vh;
+.card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border);
+  box-shadow: none;
 }
 
-
-.white-text {
-  color: #fff !important;
+.collection {
+  background: var(--card-bg);
 }
 
-/* RiiConnect24 */
+.collection .collection-item {
+  background-color: var(--card-bg);
+  border-bottom: 1px solid var(--border);
+}
+
+.collection.with-header .collection-header {
+  background-color: var(--card-bg);
+  border-bottom: 1px solid var(--border);
+}
+
+/* Layout */
+
+.site-header {
+  padding: 5rem 0 3rem;
+  text-align: center;
+}
+
+.site-header h1 {
+  font-size: 2.6rem;
+  margin-bottom: 0.4rem;
+  color: var(--heading);
+}
+
+.site-header .tagline {
+  font-size: 1.15rem;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+}
+
+.contact-block {
+  margin: 0 auto 1.6rem;
+  max-width: 480px;
+}
+
+.contact-block .email {
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+.contact-block .contact-note {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 0.4rem;
+  line-height: 1.5rem;
+}
+
+.member-login-btn {
+  margin-top: 1.4rem;
+  background-color: var(--accent) !important;
+  color: var(--btn-text) !important;
+  border-radius: 4px;
+}
+
+.section-heading {
+  color: var(--heading);
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.bio-section {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 2.5rem 0;
+}
+
+.bio-section p {
+  color: var(--text);
+}
+
+.projects-section {
+  padding: 2.5rem 0 4rem;
+}
+
+.project-card {
+  height: 100%;
+  padding: 1.4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card .project-head {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+
+.project-card .project-head img {
+  width: 32px;
+  height: 32px;
+  margin-right: 0.7rem;
+  border-radius: 6px;
+  background: var(--accent-soft);
+  object-fit: contain;
+  padding: 4px;
+}
+
+.project-card .project-head h3 {
+  font-size: 1.1rem;
+  margin: 0;
+  color: var(--heading);
+}
+
+.project-card p {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  line-height: 1.6rem;
+  flex-grow: 1;
+}
+
+.project-card a.project-link {
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-top: 0.6rem;
+}
+
+footer.page-footer {
+  text-align: center;
+  padding: 2rem 0;
+  color: var(--text-muted);
+}
+
+footer.page-footer p {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+/* RiiConnect24 leftover helper classes still used elsewhere */
 .dropdown-content {
   z-index: 1000;
 }
 
-.spin  {
--webkit-animation: spin 1s linear infinite;
--moz-animation: spin 1s linear infinite;
-animation: spin 1s linear infinite;
+.spin {
+  -webkit-animation: spin 1s linear infinite;
+  -moz-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
 }
 @-moz-keyframes spin {
-100% {
--moz-transform: rotate(360deg);
-}
+  100% { -moz-transform: rotate(360deg); }
 }
 @-webkit-keyframes spin {
-100% {
--webkit-transform: rotate(360deg);
-}
+  100% { -webkit-transform: rotate(360deg); }
 }
 @keyframes spin {
-100% {
--webkit-transform: rotate(360deg);
-transform: rotate(360deg);
-}
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
