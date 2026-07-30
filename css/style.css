@@ -28,7 +28,7 @@
   --accent: #3fb8e0;
   --accent-soft: rgba(63, 184, 224, 0.12);
   --border: #35353c;
-  --btn-text: #12181a;
+  --btn-text: #ffffff;
 }
 
 @media (prefers-color-scheme: light) {
@@ -127,7 +127,7 @@ p {
 }
 
 .site-header h1 {
-  font-size: 2.1rem;
+  font-size: 2.6rem;
   margin-bottom: 0.4rem;
   color: var(--heading);
 }
@@ -178,8 +178,8 @@ p {
 
 .section-heading {
   color: var(--heading);
-  font-size: 1.4rem;
-  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  margin-bottom: 1.8rem;
   text-align: center;
 }
 
@@ -213,23 +213,25 @@ p {
   padding: 1.8rem;
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
 .project-card .project-head {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
 }
 
 .project-card .project-head img {
-  width: 32px;
-  height: 32px;
-  margin-right: 0.8rem;
-  border-radius: 6px;
+  width: 72px;
+  height: 72px;
+  margin-bottom: 0.9rem;
+  border-radius: 12px;
   background: var(--accent-soft);
   box-sizing: border-box;
-  padding: 6px;
+  padding: 10px;
   object-fit: contain;
   object-position: center;
   display: block;
@@ -237,7 +239,7 @@ p {
 }
 
 .project-card .project-head h3 {
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin: 0;
   color: var(--heading);
 }
@@ -247,12 +249,22 @@ p {
   color: var(--text-muted);
   line-height: 1.6rem;
   flex-grow: 1;
+  margin-bottom: 0;
+  text-align: center;
 }
 
 .project-card a.project-link {
-  font-size: 0.85rem;
+  display: inline-block;
+  align-self: center;
+  margin-top: 1.4rem;
+  padding: 0 1.2rem;
+  height: 32px;
+  line-height: 32px;
+  background-color: var(--accent);
+  color: var(--btn-text);
+  font-size: 0.82rem;
   font-weight: 600;
-  margin-top: 0.6rem;
+  border-radius: 4px;
 }
 
 footer.page-footer {
