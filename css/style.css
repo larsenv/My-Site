@@ -222,13 +222,16 @@ p {
 }
 
 .project-card .project-head img {
-  width: 28px;
-  height: 28px;
+  width: 32px;
+  height: 32px;
   margin-right: 0.8rem;
   border-radius: 6px;
   background: var(--accent-soft);
-  object-fit: contain;
+  box-sizing: border-box;
   padding: 6px;
+  object-fit: contain;
+  object-position: center;
+  display: block;
   flex-shrink: 0;
 }
 
