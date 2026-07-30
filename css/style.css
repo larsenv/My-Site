@@ -179,7 +179,7 @@ p {
 .section-heading {
   color: var(--heading);
   font-size: 1.8rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.8rem;
   text-align: center;
 }
 
@@ -213,6 +213,7 @@ p {
   padding: 1.8rem;
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
 .project-card .project-head {
@@ -247,12 +248,22 @@ p {
   color: var(--text-muted);
   line-height: 1.6rem;
   flex-grow: 1;
+  margin-bottom: 0;
+  text-align: center;
 }
 
 .project-card a.project-link {
-  font-size: 0.85rem;
+  display: inline-block;
+  align-self: center;
+  margin-top: 0.3rem;
+  padding: 0 1.2rem;
+  height: 32px;
+  line-height: 32px;
+  background-color: var(--accent);
+  color: var(--btn-text);
+  font-size: 0.82rem;
   font-weight: 600;
-  margin-top: 0.6rem;
+  border-radius: 4px;
 }
 
 footer.page-footer {
